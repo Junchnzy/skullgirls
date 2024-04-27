@@ -1,0 +1,44 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: calc(100vh - 16px);
+  padding: 8px;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  //   所有svg图标大小
+  svg {
+    width: 22px;
+    height: 22px;
+    padding: 9px;
+    cursor: pointer;
+  }
+  //   导航栏第一部分
+  .navbar-part1 {
+    .logo {
+      display: flex;
+      padding-bottom: 8px;
+      margin: 4px 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      justify-content: center;
+      align-items: center;
+      a {
+        width: 40px;
+        height: 40px;
+        img {
+          width: 32px;
+          height: 32px;
+          vertical-align: middle;
+          padding: 4px;
+          border-radius: 4px;
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.07000000000000001);
+          }
+        }
+      }
+    }
+  }
+}

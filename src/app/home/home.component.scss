@@ -1,0 +1,263 @@
+.home {
+  margin-left: 60px;
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 175px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--title);
+    }
+    p {
+      margin: 15px 0;
+      font-size: 12px;
+      color: var(--text);
+    }
+    .links {
+      display: flex;
+      button {
+        width: 175px;
+        height: 32px;
+        border-radius: 5px;
+      }
+      button:nth-child(1) {
+        background-color: #5865f2;
+      }
+      button:nth-child(2) {
+        margin: 0 10px;
+        background-color: #ff5872;
+      }
+      button:nth-child(3) {
+        background-color: #009df7;
+      }
+    }
+  }
+  main {
+    margin: 20px auto 0 auto;
+    max-width: 1500px;
+    width: 98%;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    & > div:nth-child(1) {
+      box-shadow: var(--shadow);
+      border-radius: 8px;
+      padding: 10px;
+    }
+    .introduce {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        color: var(--text);
+      }
+      button {
+        padding: 5px 10px;
+        border-radius: 4px;
+      }
+    }
+    .left {
+      width: 30%;
+      overflow: hidden;
+      height: 1000px;
+      .news {
+        margin-top: 20px;
+        height: 95%;
+        overflow: auto;
+        dl {
+          margin-bottom: 16px;
+          dt {
+            color: var(--title);
+          }
+          dd {
+            margin-inline-start: 20px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+    .center {
+      width: 40%;
+      margin: 0 15px;
+      .otherwiki1 {
+        box-shadow: var(--shadow);
+        padding: 10px;
+        border-radius: 8px;
+        .cards {
+          margin-top: 16px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+          & > div {
+            box-shadow: var(--shadow);
+            border-radius: 8px;
+            img {
+              width: 100%;
+              aspect-ratio: 16/ 10;
+            }
+          }
+        }
+        button {
+          margin-top: 10px;
+          width: 100%;
+          height: 32px;
+          border-radius: 8px;
+        }
+      }
+      .otherwiki2 {
+        margin-top: 10px;
+        box-shadow: var(--shadow);
+        padding: 10px;
+        border-radius: 8px;
+        .cards {
+          margin-top: 16px;
+          margin-bottom: 10px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+          & > div {
+            text-align: center;
+            line-height: 35px;
+            height: 35px;
+            box-shadow: var(--shadow);
+            border-radius: 8px;
+            img {
+              height: 25px;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+      .otherwiki3 {
+        margin-top: 10px;
+        box-shadow: var(--shadow);
+        padding: 10px;
+        border-radius: 8px;
+        .links {
+          margin-top: 16px;
+          a {
+            line-height: 32px;
+            text-align: center;
+            display: block;
+            margin-top: 10px;
+            border-radius: 8px;
+            width: 100%;
+            height: 32px;
+          }
+        }
+      }
+    }
+    .right {
+      width: 30%;
+      .guides {
+        box-shadow: var(--shadow);
+        border-radius: 8px;
+        padding: 10px;
+        .register {
+          margin-top: 10px;
+          display: flex;
+          align-items: center;
+          button {
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin-right: 8px;
+          }
+        }
+        .links {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          a {
+            line-height: 32px;
+            text-align: center;
+            display: block;
+            margin-top: 10px;
+            border-radius: 8px;
+            width: 48%;
+            height: 32px;
+          }
+        }
+        .sole {
+          a {
+            width: 100%;
+          }
+        }
+        .info {
+          margin-top: 10px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+          & > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .statistics {
+          margin-top: 10px;
+        }
+      }
+      .construction {
+        box-shadow: var(--shadow);
+        border-radius: 8px;
+        padding: 10px;
+        margin-top: 10px;
+        .cards {
+          margin-top: 16px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+          & > div {
+            box-shadow: var(--shadow);
+            border-radius: 8px;
+            img {
+              width: 100%;
+              aspect-ratio: 16/ 10;
+            }
+          }
+        }
+      }
+      .frame {
+        margin-top: 10px;
+        box-shadow: var(--shadow);
+        iframe {
+          border-radius: 8px;
+          margin-bottom: -10px;
+          width: 100%;
+          aspect-ratio: 16/ 9;
+        }
+      }
+      figure {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        img {
+          width: 100%;
+          margin-top: 15px;
+          border-radius: 8px;
+          box-shadow: var(--shadow);
+        }
+        figcaption {
+          position: absolute;
+          left: 10px;
+          bottom: 10px;
+          p {
+            margin: 0;
+            color: var(--gray);
+          }
+          h3 {
+            margin: 6px 0 0 0;
+            color: var(--light);
+          }
+        }
+      }
+    }
+  }
+}

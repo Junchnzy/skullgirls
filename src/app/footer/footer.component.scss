@@ -1,0 +1,35 @@
+footer {
+  margin: 20px 0;
+  p {
+    margin: 6px 0;
+    font-size: 14px;
+    color: var(--text);
+  }
+  .links {
+    margin: 10px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    ul {
+      flex: 1;
+      color: var(--text);
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      margin: 0 20px;
+      font-size: 14px;
+      color: var(--text);
+      img {
+        vertical-align: middle;
+        width: 18px;
+      }
+    }
+  }
+}
